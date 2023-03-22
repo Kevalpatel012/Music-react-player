@@ -2,7 +2,8 @@
 # Music-React-Player
 
 
-This is a music player it uses downloaded copywrite free music from https://chillhop.com. It uses javascript and react to work.
+Music player built using react and java script, uses a collection of copy free written music from chillhop.com to play from.
+
 ![Alt Text](animation1.gif)
 
 
