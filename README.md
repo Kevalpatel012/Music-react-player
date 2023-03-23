@@ -2,8 +2,7 @@
 # Music-React-Player
 
 
-Music player built using react and JavaScript, plays a collection of copy free written music from chillhop.com to play from. Has a modern UI design, as well as a simple interface thats easy to use.
-
+Music player that apply's a modern UI design, as well as a simple interface thats easy to use. Built using react and JavaScript, plays a collection of copy free written music from chillhop.com. Comes with a pause/play button as well as a volume scroller and a 
 ![Alt Text](animation1.gif)
 
 
