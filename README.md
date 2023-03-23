@@ -1,7 +1,7 @@
 
 # Music-React-Player
 
-The music player app features an intuitive interface that includes essential controls for a seamless listening experience. The app provides a play/pause button to easily start or stop the current track, while the play back and play forward buttons allow users to skip to the previous or next song in the playlist. In addition, the app comes with a volume scroller, enabling users to adjust the volume level to their liking.
+The music player app features an intuitive interface built using JavaScript and react that includes essential controls for a seamless listening experience. The app provides a play/pause button to easily start or stop the current track, while the play back and play forward buttons allow users to skip to the previous or next song in the playlist. In addition, the app comes with a volume scroller, enabling users to adjust the volume level to their liking.
 
 ![Alt Text](animation1.gif)
 
