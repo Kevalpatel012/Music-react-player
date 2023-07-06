@@ -1,32 +1,36 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  box-sizing: border-box; /* Include border and padding in element's total width and height */
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif; /* Set the font family for the body */
 }
+
 .App {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; /* Apply transition effect to all properties with 0.5s duration and ease timing function */
 }
+
 .library-active {
-  margin-left: 30%;
+  margin-left: 30%; /* Set the left margin to 30% when .library-active class is applied */
 }
 
 h1 {
-  font-size: 1rem;
-}
-h2 {
-  color: rgb(51, 51, 51);
-}
-h3,
-h4 {
-  color: rgb(100, 100, 100);
-  font-weight: 400;
+  font-size: 1rem; /* Set font size */
 }
 
-@import "./song";
-@import "./player";
-@import "./library";
-@import "./nav";
+h2 {
+  color: rgb(51, 51, 51); /* Set text color */
+}
+
+h3,
+h4 {
+  color: rgb(100, 100, 100); /* Set text color */
+  font-weight: 400; /* Set font weight */
+}
+
+@import "./song"; /* Import CSS from the "./song" file */
+@import "./player"; /* Import CSS from the "./player" file */
+@import "./library"; /* Import CSS from the "./library" file */
+@import "./nav"; /* Import CSS from the "./nav" file */

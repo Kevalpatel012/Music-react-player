@@ -1,71 +1,76 @@
 .player {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 20vh; /* Set the minimum height of the .player element */
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Space items evenly along the vertical axis */
 }
 
 .time-control {
-  width: 50%;
-  display: flex;
-  align-items: center;
+  width: 50%; /* Set the width of the .time-control element */
+  display: flex; /* Display as flex */
+  align-items: center; /* Align items vertically in the center */
+
   input {
-    width: 100%;
-    -webkit-appearance: none;
-    background: transparent;
-    cursor: pointer;
+    width: 100%; /* Set the width of the input element */
+    -webkit-appearance: none; /* Remove default styling on iOS */
+    background: transparent; /* Set background color to transparent */
+    cursor: pointer; /* Set cursor to pointer */
   }
 
   p {
-    padding: 1rem;
+    padding: 1rem; /* Add padding */
   }
 }
-.play-control {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
 
-  width: 40%;
+.play-control {
+  display: flex; /* Display as flex */
+  justify-content: space-between; /* Space items evenly along the horizontal axis */
+  align-items: center; /* Align items vertically in the center */
+  padding: 1rem; /* Add padding */
+
+  width: 40%; /* Set the width of the .play-control element */
+
   svg {
-    cursor: pointer;
+    cursor: pointer; /* Set cursor to pointer */
   }
 }
 
 .track {
-  width: 100%;
-  height: 1rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
+  width: 100%; /* Set the width of the .track element */
+  height: 1rem; /* Set the height of the .track element */
+  position: relative; /* Set position to relative */
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 1rem; /* Add border radius */
 }
+
 .animate-track {
-  background: rgb(204, 204, 204);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(0%);
-  padding: 1rem;
-  pointer-events: none;
+  background: rgb(204, 204, 204); /* Set background color */
+  width: 100%; /* Set the width of the .animate-track element */
+  height: 100%; /* Set the height of the .animate-track element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from top */
+  left: 0; /* Position from left */
+  transform: translateX(0%); /* Set initial horizontal translation */
+  padding: 1rem; /* Add padding */
+  pointer-events: none; /* Disable pointer events */
 }
 
 input[type="range"]:focus {
-  outline: none;
+  outline: none; /* Remove outline on focus */
 }
+
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
+  -webkit-appearance: none; /* Remove default styling on WebKit browsers */
+  height: 16px; /* Set height of the slider thumb */
+  width: 16px; /* Set width of the slider thumb */
 }
 
 @media screen and (max-width: 768px) {
   .time-control {
-    width: 90%;
+    width: 90%; /* Set the width of the .time-control element on smaller screens */
   }
   .play-control {
-    width: 80%;
+    width: 80%; /* Set the width of the .play-control element on smaller screens */
   }
 }

@@ -1,39 +1,42 @@
 .song-container {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 60vh; /* Set the minimum height of the .song-container element */
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+
   img {
-    width: 25%;
-    border-radius: 50%;
-    transition: all 2s ease;
+    width: 25%; /* Set the width of the img element */
+    border-radius: 50%; /* Add border radius to create a circular shape */
+    transition: all 2s ease; /* Add transition effect for smooth animation */
   }
+
   h2 {
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 1rem; /* Add padding */
   }
+
   h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Set font size */
   }
 }
 
 @media screen and (max-width: 768px) {
   .song-container {
     img {
-      width: 60%;
+      width: 60%; /* Set the width of the img element on smaller screens */
     }
   }
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Set initial rotation angle */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Set final rotation angle */
   }
 }
 
 .rotateSong {
-  animation: rotate 20s linear forwards infinite;
+  animation: rotate 20s linear forwards infinite; /* Apply the rotate animation to the element */
 }

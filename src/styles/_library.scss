@@ -1,76 +1,77 @@
 .library {
-  position: fixed;
-  box-shadow: 2px 2px 50px rgb(221, 221, 221);
-  border-radius: 1rem;
-  top: 0;
-  left: 0;
-  width: 20rem;
-  height: 100%;
-  overflow: scroll;
-  background: white;
-  transform: translateX(-100%);
-  transition: all 0.5s ease;
-  opacity: 0;
+  position: fixed; /* Set the position to fixed */
+  box-shadow: 2px 2px 50px rgb(221, 221, 221); /* Apply a box shadow */
+  border-radius: 1rem; /* Set the border radius */
+  top: 0; /* Position from the top */
+  left: 0; /* Position from the left */
+  width: 20rem; /* Set the width */
+  height: 100%; /* Set the height */
+  overflow: scroll; /* Enable scrolling if content exceeds height */
+  background: white; /* Set the background color */
+  transform: translateX(-100%); /* Move the element off-screen */
+  transition: all 0.5s ease; /* Apply a transition effect */
+  opacity: 0; /* Set the initial opacity */
 
   h2 {
-    padding: 2rem;
+    padding: 2rem; /* Add padding to h2 elements */
   }
 }
 
 .library-song {
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem 1rem 2rem;
-  cursor: pointer;
-  transition: all 0.75s ease-out;
+  display: flex; /* Display as flex */
+  align-items: center; /* Align items vertically in the center */
+  padding: 1rem 2rem 1rem 2rem; /* Set padding */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: all 0.75s ease-out; /* Apply a transition effect */
 
   img {
-    width: 30%;
+    width: 30%; /* Set the width of the image */
   }
   &:hover {
-    background: rgb(235, 235, 235);
+    background: rgb(235, 235, 235); /* Change background color on hover */
   }
 }
+
 .song-description {
-  padding-left: 1rem;
+  padding-left: 1rem; /* Add left padding */
   h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Set the font size for h3 elements */
   }
   h4 {
-    font-size: 0.7rem;
+    font-size: 0.7rem; /* Set the font size for h4 elements */
   }
 }
 
 /* The emerging W3C standard
    that is currently Firefox-only */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent; /* Set the color of the scrollbar thumb and track */
 }
 
 /* Works on Chrome/Edge/Safari */
 *::-webkit-scrollbar {
-  width: 5px;
+  width: 5px; /* Set the width of the scrollbar */
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: transparent; /* Set the background color of the scrollbar track */
 }
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.7);
-  border-radius: 20px;
-  border: transparent;
+  background-color: rgba(155, 155, 155, 0.7); /* Set the background color of the scrollbar thumb */
+  border-radius: 20px; /* Set the border radius of the scrollbar thumb */
+  border: transparent; /* Set the border of the scrollbar thumb */
 }
 
 .selected {
-  background: rgb(194, 208, 253);
+  background: rgb(194, 208, 253); /* Set the background color for elements with the class .selected */
 }
 .active-library {
-  transform: translateX(0%);
-  opacity: 1;
+  transform: translateX(0%); /* Move the element to the original position */
+  opacity: 1; /* Set the opacity to fully visible */
 }
 
 @media screen and (max-width: 768px) {
   .library {
-    width: 100%;
+    width: 100%; /* Set the width to 100% on screens with a maximum width of 768px */
   }
 }
